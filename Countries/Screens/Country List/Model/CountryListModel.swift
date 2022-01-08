@@ -10,7 +10,6 @@ import Foundation
 // MARK: - CountryListModel
 struct CountryListModel: Codable {
 	let data: [Datum]
-	let links: [Link]
 	let metadata: Metadata
 }
 
@@ -24,11 +23,6 @@ struct Datum: Codable {
 		case code, currencyCodes, name
 		case wikiDataID = "wikiDataId"
 	}
-}
-
-// MARK: - Link
-struct Link: Codable {
-	let rel, href: String
 }
 
 // MARK: - Metadata
