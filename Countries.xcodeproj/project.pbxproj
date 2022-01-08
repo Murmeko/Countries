@@ -21,6 +21,9 @@
 		1B1DD1B52789CB2100434408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD1B22789CB0400434408 /* GoogleService-Info.plist */; };
 		1B1DD1B62789CB2100434408 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD1B22789CB0400434408 /* GoogleService-Info.plist */; };
 		1B1DD1BA2789D0CA00434408 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD1B92789D0CA00434408 /* .swiftlint.yml */; };
+		1BA562322789EDD2003AB0FC /* Country List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA562312789EDD2003AB0FC /* Country List.storyboard */; };
+		1BA562342789EE19003AB0FC /* Country Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA562332789EE19003AB0FC /* Country Details.storyboard */; };
+		1BA5623B2789F099003AB0FC /* Saved Countries List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5623A2789F099003AB0FC /* Saved Countries List.storyboard */; };
 		668CCE349930A53E9BFB382F /* Pods_Countries_CountriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BA0D3E3AA135F84D78C636 /* Pods_Countries_CountriesUITests.framework */; };
 		8C297FD8B987539D2CE84415 /* Pods_CountriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CD9F1FFC5366F4AB2D8197 /* Pods_CountriesTests.framework */; };
 		9167105308889EF4B7084813 /* Pods_Countries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDE1ADB7E8C3312BB9919E3 /* Pods_Countries.framework */; };
@@ -61,6 +64,9 @@
 		1B1DD1A42789C29D00434408 /* CountryDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsModel.swift; sourceTree = "<group>"; };
 		1B1DD1B22789CB0400434408 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B1DD1B92789D0CA00434408 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		1BA562312789EDD2003AB0FC /* Country List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Country List.storyboard"; path = "Countries/Screens/Country List/View/Storyboard+Xibs/Country List.storyboard"; sourceTree = SOURCE_ROOT; };
+		1BA562332789EE19003AB0FC /* Country Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Country Details.storyboard"; sourceTree = "<group>"; };
+		1BA5623A2789F099003AB0FC /* Saved Countries List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Saved Countries List.storyboard"; sourceTree = "<group>"; };
 		30BA0D3E3AA135F84D78C636 /* Pods_Countries_CountriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countries_CountriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DDE1ADB7E8C3312BB9919E3 /* Pods_Countries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE8C94509D172EE9B081DEA /* Pods-Countries-CountriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries-CountriesUITests.release.xcconfig"; path = "Target Support Files/Pods-Countries-CountriesUITests/Pods-Countries-CountriesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +181,7 @@
 		1B1DD1A82789C33900434408 /* Storyboard+Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				1BA562312789EDD2003AB0FC /* Country List.storyboard */,
 			);
 			path = "Storyboard+Xibs";
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 			children = (
 				1B1DD1772789C1D000434408 /* Main.storyboard */,
 				1B1DD1AB2789C39700434408 /* Country List */,
+				1BA562392789F08B003AB0FC /* Saved Countries List */,
 				1B1DD1AC2789C3D600434408 /* Country Details */,
 			);
 			path = Screens;
@@ -227,6 +235,8 @@
 		1B1DD1AE2789C3F600434408 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1BA562352789EE29003AB0FC /* Storyboard+Xibs */,
+				1BA562372789EE41003AB0FC /* View Classes */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +267,37 @@
 				1B1DD1B22789CB0400434408 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BA562352789EE29003AB0FC /* Storyboard+Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				1BA562332789EE19003AB0FC /* Country Details.storyboard */,
+			);
+			path = "Storyboard+Xibs";
+			sourceTree = "<group>";
+		};
+		1BA562372789EE41003AB0FC /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BA562382789EE55003AB0FC /* Cell Classes */,
+			);
+			path = "View Classes";
+			sourceTree = "<group>";
+		};
+		1BA562382789EE55003AB0FC /* Cell Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Cell Classes";
+			sourceTree = "<group>";
+		};
+		1BA562392789F08B003AB0FC /* Saved Countries List */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5623A2789F099003AB0FC /* Saved Countries List.storyboard */,
+			);
+			path = "Saved Countries List";
 			sourceTree = "<group>";
 		};
 		8D0E797D8926FE0289A1B6B1 /* Frameworks */ = {
@@ -393,10 +434,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA562322789EDD2003AB0FC /* Country List.storyboard in Resources */,
 				1B1DD1BA2789D0CA00434408 /* .swiftlint.yml in Resources */,
 				1B1DD17E2789C1D200434408 /* LaunchScreen.storyboard in Resources */,
+				1BA5623B2789F099003AB0FC /* Saved Countries List.storyboard in Resources */,
 				1B1DD1B32789CB0400434408 /* GoogleService-Info.plist in Resources */,
 				1B1DD17B2789C1D200434408 /* Assets.xcassets in Resources */,
+				1BA562342789EE19003AB0FC /* Country Details.storyboard in Resources */,
 				1B1DD1792789C1D000434408 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
