@@ -8,6 +8,7 @@ target 'Countries' do
 
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Crashlytics'
+	pod 'Firebase/Performance'
 
 	pod 'SwiftLint'
 
