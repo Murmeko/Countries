@@ -6,9 +6,7 @@ target 'Countries' do
 	pod 'Moya', '~> 15.0'
 	pod 'Kingfisher', '~> 7.1'
 
-	pod 'Firebase/Analytics'
-	pod 'Firebase/Crashlytics'
-	pod 'Firebase/Performance'
+	
 
 	pod 'SwiftLint'
 
