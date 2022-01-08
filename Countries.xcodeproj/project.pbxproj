@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		1B1DD1722789C1D000434408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1712789C1D000434408 /* AppDelegate.swift */; };
 		1B1DD1742789C1D000434408 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1732789C1D000434408 /* SceneDelegate.swift */; };
-		1B1DD1762789C1D000434408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1752789C1D000434408 /* ViewController.swift */; };
 		1B1DD1792789C1D000434408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD1772789C1D000434408 /* Main.storyboard */; };
 		1B1DD17B2789C1D200434408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD17A2789C1D200434408 /* Assets.xcassets */; };
 		1B1DD17E2789C1D200434408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1DD17C2789C1D200434408 /* LaunchScreen.storyboard */; };
 		1B1DD1892789C1D200434408 /* CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1882789C1D200434408 /* CountriesTests.swift */; };
 		1B1DD1932789C1D200434408 /* CountriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1922789C1D200434408 /* CountriesUITests.swift */; };
 		1B1DD1952789C1D200434408 /* CountriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1942789C1D200434408 /* CountriesUITestsLaunchTests.swift */; };
+		1B1DD1A32789C23000434408 /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1A22789C23000434408 /* CountryListModel.swift */; };
+		1B1DD1A52789C29D00434408 /* CountryDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1DD1A42789C29D00434408 /* CountryDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		1B1DD16E2789C1D000434408 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1DD1712789C1D000434408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B1DD1732789C1D000434408 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B1DD1752789C1D000434408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B1DD1782789C1D000434408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B1DD17A2789C1D200434408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1DD17D2789C1D200434408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		1B1DD18E2789C1D200434408 /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1DD1922789C1D200434408 /* CountriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITests.swift; sourceTree = "<group>"; };
 		1B1DD1942789C1D200434408 /* CountriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B1DD1A22789C23000434408 /* CountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListModel.swift; sourceTree = "<group>"; };
+		1B1DD1A42789C29D00434408 /* CountryDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,8 @@
 		1B1DD1702789C1D000434408 /* Countries */ = {
 			isa = PBXGroup;
 			children = (
-				1B1DD1712789C1D000434408 /* AppDelegate.swift */,
-				1B1DD1732789C1D000434408 /* SceneDelegate.swift */,
-				1B1DD1752789C1D000434408 /* ViewController.swift */,
-				1B1DD1772789C1D000434408 /* Main.storyboard */,
-				1B1DD17A2789C1D200434408 /* Assets.xcassets */,
-				1B1DD17C2789C1D200434408 /* LaunchScreen.storyboard */,
-				1B1DD17F2789C1D200434408 /* Info.plist */,
+				1B1DD1AA2789C38E00434408 /* Screens */,
+				1B1DD1B12789C49300434408 /* Supporting Files */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -125,6 +122,116 @@
 				1B1DD1942789C1D200434408 /* CountriesUITestsLaunchTests.swift */,
 			);
 			path = CountriesUITests;
+			sourceTree = "<group>";
+		};
+		1B1DD1A12789C21000434408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1A22789C23000434408 /* CountryListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B1DD1A62789C31200434408 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1A82789C33900434408 /* Storyboard+Xibs */,
+				1B1DD1A92789C34900434408 /* View Classes */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B1DD1A72789C31900434408 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1B1DD1A82789C33900434408 /* Storyboard+Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Storyboard+Xibs";
+			sourceTree = "<group>";
+		};
+		1B1DD1A92789C34900434408 /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1B02789C44A00434408 /* Cell Classes */,
+			);
+			path = "View Classes";
+			sourceTree = "<group>";
+		};
+		1B1DD1AA2789C38E00434408 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1772789C1D000434408 /* Main.storyboard */,
+				1B1DD1AB2789C39700434408 /* Country List */,
+				1B1DD1AC2789C3D600434408 /* Country Details */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1B1DD1AB2789C39700434408 /* Country List */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1A12789C21000434408 /* Model */,
+				1B1DD1A62789C31200434408 /* View */,
+				1B1DD1A72789C31900434408 /* View Model */,
+			);
+			path = "Country List";
+			sourceTree = "<group>";
+		};
+		1B1DD1AC2789C3D600434408 /* Country Details */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1AF2789C3FE00434408 /* Model */,
+				1B1DD1AE2789C3F600434408 /* View */,
+				1B1DD1AD2789C3EC00434408 /* View Model */,
+			);
+			path = "Country Details";
+			sourceTree = "<group>";
+		};
+		1B1DD1AD2789C3EC00434408 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1B1DD1AE2789C3F600434408 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B1DD1AF2789C3FE00434408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1A42789C29D00434408 /* CountryDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B1DD1B02789C44A00434408 /* Cell Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Cell Classes";
+			sourceTree = "<group>";
+		};
+		1B1DD1B12789C49300434408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1712789C1D000434408 /* AppDelegate.swift */,
+				1B1DD1732789C1D000434408 /* SceneDelegate.swift */,
+				1B1DD17C2789C1D200434408 /* LaunchScreen.storyboard */,
+				1B1DD17A2789C1D200434408 /* Assets.xcassets */,
+				1B1DD17F2789C1D200434408 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B1DD1762789C1D000434408 /* ViewController.swift in Sources */,
 				1B1DD1722789C1D000434408 /* AppDelegate.swift in Sources */,
+				1B1DD1A32789C23000434408 /* CountryListModel.swift in Sources */,
 				1B1DD1742789C1D000434408 /* SceneDelegate.swift in Sources */,
+				1B1DD1A52789C29D00434408 /* CountryDetailsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -447,6 +555,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +584,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
