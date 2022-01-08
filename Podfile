@@ -7,7 +7,7 @@ target 'Countries' do
 	pod 'Kingfisher', '~> 7.1'
 
 	pod 'Firebase/Analytics'
-
+	pod 'Firebase/Crashlytics'
 
 	pod 'SwiftLint'
 
