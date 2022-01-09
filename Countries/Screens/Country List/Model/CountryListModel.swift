@@ -9,13 +9,12 @@ import Foundation
 
 // MARK: - CountryListModel
 struct CountryListModel: Codable {
-	let data: [Datum]
-	let links: [Link]
-	let metadata: Metadata
+	let data: [CountryListData]
+	let metadata: CountryListMetadata
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct CountryListData: Codable {
 	let code: String
 	let currencyCodes: [String]
 	let name, wikiDataID: String
@@ -26,12 +25,13 @@ struct Datum: Codable {
 	}
 }
 
-// MARK: - Link
-struct Link: Codable {
-	let rel, href: String
+// MARK: - Metadata
+struct CountryListMetadata: Codable {
+	let currentOffset, totalCount: Int
 }
 
-// MARK: - Metadata
-struct Metadata: Codable {
-	let currentOffset, totalCount: Int
+extension CountryListData {
+	static var placeholder: CountryListData {
+		return CountryListData(code: "", currencyCodes: [""], name: "", wikiDataID: "")
+	}
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReuseableCountryListCell" id="gTV-IL-0wX" customClass="CountryListCell" customModule="Countries" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3K-Gc-sMd">
+                        <rect key="frame" x="15" y="15" width="370.5" height="62"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTX-P3-47N">
+                        <rect key="frame" x="397.5" y="11.5" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rTX-P3-47N" secondAttribute="height" id="cRl-uC-SWq"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="star" catalog="system"/>
+                        <connections>
+                            <action selector="countryListCellButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="6h3-5h-ZN7"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rTX-P3-47N" secondAttribute="trailing" constant="12.5" id="AIa-PB-Ksm"/>
+                <constraint firstItem="h3K-Gc-sMd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="D51-jD-eCP"/>
+                <constraint firstItem="h3K-Gc-sMd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Xsd-wd-Lv9"/>
+                <constraint firstItem="rTX-P3-47N" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="aND-it-yR7"/>
+                <constraint firstAttribute="bottom" secondItem="rTX-P3-47N" secondAttribute="bottom" constant="12" id="cSS-KT-qjH"/>
+                <constraint firstAttribute="bottom" secondItem="h3K-Gc-sMd" secondAttribute="bottom" constant="15" id="kTv-ra-fSd"/>
+                <constraint firstItem="rTX-P3-47N" firstAttribute="leading" secondItem="h3K-Gc-sMd" secondAttribute="trailing" constant="12" id="y7Y-CZ-Tri"/>
+            </constraints>
+            <size key="customSize" width="478" height="92"/>
+            <connections>
+                <outlet property="countryListCellButton" destination="rTX-P3-47N" id="xEJ-si-9TN"/>
+                <outlet property="countryListCellLabel" destination="h3K-Gc-sMd" id="Ecs-t6-pff"/>
+            </connections>
+            <point key="canvasLocation" x="440.57971014492756" y="-325.44642857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
