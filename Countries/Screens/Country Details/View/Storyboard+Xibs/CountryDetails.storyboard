@@ -9,17 +9,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Country Details View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="CountryDetailsViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1r1-HU-9Em">
+                                <rect key="frame" x="0.0" y="44" width="414" height="310.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1r1-HU-9Em" secondAttribute="height" multiplier="4:3" id="i0G-s9-pZY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoQ-PF-dQd">
+                                <rect key="frame" x="10" y="364.5" width="394" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urf-Qx-CMf">
+                                <rect key="frame" x="10" y="404.5" width="150" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4rr-yW-N0e"/>
+                                    <constraint firstAttribute="height" constant="35" id="XCM-a1-2Qf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="  For more info" image="arrowshape.turn.up.right.circle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryDetailsButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e9x-WS-jyk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="urf-Qx-CMf" firstAttribute="top" secondItem="VoQ-PF-dQd" secondAttribute="bottom" constant="10" id="675-Ok-sxQ"/>
+                            <constraint firstItem="1r1-HU-9Em" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9OJ-W2-WAi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VoQ-PF-dQd" secondAttribute="trailing" constant="10" id="HTQ-FO-iqV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="urf-Qx-CMf" secondAttribute="trailing" constant="10" id="Klp-Jv-5sf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="urf-Qx-CMf" secondAttribute="bottom" constant="10" id="PNx-cp-9ks"/>
+                            <constraint firstItem="urf-Qx-CMf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="SrY-y1-CUF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1r1-HU-9Em" secondAttribute="trailing" id="d4z-MZ-eOf"/>
+                            <constraint firstItem="VoQ-PF-dQd" firstAttribute="top" secondItem="1r1-HU-9Em" secondAttribute="bottom" constant="10" id="hCM-Tz-Xmz"/>
+                            <constraint firstItem="1r1-HU-9Em" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hGc-uw-iZB"/>
+                            <constraint firstItem="VoQ-PF-dQd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="kUo-AU-4oR"/>
+                        </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countryDetailsImageView" destination="1r1-HU-9Em" id="tTp-ae-ah1"/>
+                        <outlet property="countryDetailsLabel" destination="VoQ-PF-dQd" id="pAv-K5-EvP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,8 +74,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

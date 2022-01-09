@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" title="Countries" id="QVb-fb-mde"/>
                     <connections>
                         <outlet property="countryListCollectionView" destination="gCM-MA-6pN" id="443-sK-hPi"/>
-                        <segue destination="yfz-Fz-8ZP" kind="show" id="42A-3c-KmQ"/>
+                        <segue destination="yfz-Fz-8ZP" kind="show" identifier="CountryListToCountryDetailsSegue" id="42A-3c-KmQ"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4At-Az-qbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

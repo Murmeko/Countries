@@ -33,9 +33,13 @@
 		1B871286278B1D2600958743 /* MoyaError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B871285278B1D2600958743 /* MoyaError+Extensions.swift */; };
 		1B871288278B205A00958743 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B871287278B205A00958743 /* NetworkManager.swift */; };
 		1B87128C278B2A4D00958743 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87128B278B2A4D00958743 /* CountryListViewModel.swift */; };
-		1B871290278B2ADB00958743 /* CountryListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87128F278B2ADB00958743 /* CountryListCellViewModel.swift */; };
 		1B871294278B3F2000958743 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B871292278B3F2000958743 /* LoadingCollectionViewCell.swift */; };
 		1B871295278B3F2000958743 /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B871293278B3F2000958743 /* LoadingCollectionViewCell.xib */; };
+		1B871299278B5DAC00958743 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B871298278B5DAC00958743 /* CountryDetailsViewController.swift */; };
+		1B87129C278B60E700958743 /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87129B278B60E700958743 /* CountryDetailsViewModel.swift */; };
+		1B87129E278B716700958743 /* SVGImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87129D278B716700958743 /* SVGImageProcessor.swift */; };
+		1B8712A6278B7A7400958743 /* SavedCountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8712A5278B7A7400958743 /* SavedCountriesListViewController.swift */; };
+		1B8712A8278B7A8300958743 /* SavedCountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8712A7278B7A8300958743 /* SavedCountriesListViewModel.swift */; };
 		1BA562322789EDD2003AB0FC /* CountryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA562312789EDD2003AB0FC /* CountryList.storyboard */; };
 		1BA562342789EE19003AB0FC /* CountryDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA562332789EE19003AB0FC /* CountryDetails.storyboard */; };
 		1BA5623B2789F099003AB0FC /* SavedCountriesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5623A2789F099003AB0FC /* SavedCountriesList.storyboard */; };
@@ -91,9 +95,13 @@
 		1B871285278B1D2600958743 /* MoyaError+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaError+Extensions.swift"; sourceTree = "<group>"; };
 		1B871287278B205A00958743 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1B87128B278B2A4D00958743 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
-		1B87128F278B2ADB00958743 /* CountryListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListCellViewModel.swift; sourceTree = "<group>"; };
 		1B871292278B3F2000958743 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B871293278B3F2000958743 /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
+		1B871298278B5DAC00958743 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		1B87129B278B60E700958743 /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
+		1B87129D278B716700958743 /* SVGImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGImageProcessor.swift; sourceTree = "<group>"; };
+		1B8712A5278B7A7400958743 /* SavedCountriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCountriesListViewController.swift; sourceTree = "<group>"; };
+		1B8712A7278B7A8300958743 /* SavedCountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCountriesListViewModel.swift; sourceTree = "<group>"; };
 		1BA562312789EDD2003AB0FC /* CountryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CountryList.storyboard; path = "Countries/Screens/Country List/View/Storyboard+Xibs/CountryList.storyboard"; sourceTree = SOURCE_ROOT; };
 		1BA562332789EE19003AB0FC /* CountryDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountryDetails.storyboard; sourceTree = "<group>"; };
 		1BA5623A2789F099003AB0FC /* SavedCountriesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedCountriesList.storyboard; sourceTree = "<group>"; };
@@ -143,14 +151,6 @@
 				E35D8BAB74422D28617EF3F3 /* Pods_CountriesTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1B1A3552278A0255001AC99B /* Cell Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1B87126E278A08F200958743 /* CountryListCell.swift */,
-			);
-			path = "Cell Classes";
 			sourceTree = "<group>";
 		};
 		1B1DD1652789C1D000434408 = {
@@ -224,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				1B87128B278B2A4D00958743 /* CountryListViewModel.swift */,
-				1B87128D278B2ABF00958743 /* Cell View Models */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -233,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				1BA562312789EDD2003AB0FC /* CountryList.storyboard */,
-				1B87126F278A08F200958743 /* CountryListCell.xib */,
 			);
 			path = "Storyboard+Xibs";
 			sourceTree = "<group>";
@@ -242,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				1B871272278A090700958743 /* CountryListViewController.swift */,
-				1B1A3552278A0255001AC99B /* Cell Classes */,
 			);
 			path = "View Classes";
 			sourceTree = "<group>";
@@ -272,6 +269,7 @@
 			children = (
 				1B1DD1AF2789C3FE00434408 /* Model */,
 				1B1DD1AE2789C3F600434408 /* View */,
+				1B87129A278B5DC300958743 /* View Model */,
 			);
 			path = "Country Details";
 			sourceTree = "<group>";
@@ -280,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				1BA562352789EE29003AB0FC /* Storyboard+Xibs */,
+				1B871297278B5D8900958743 /* View Classes */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +320,7 @@
 		1B871279278B000500958743 /* General Usage */ = {
 			isa = PBXGroup;
 			children = (
+				1B87129F278B723E00958743 /* Helpers */,
 				1B871291278B3EDF00958743 /* View */,
 				1B871282278B1C8E00958743 /* Extensions */,
 				1B871276278AFFB900958743 /* Networking */,
@@ -337,22 +337,104 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		1B87128D278B2ABF00958743 /* Cell View Models */ = {
-			isa = PBXGroup;
-			children = (
-				1B87128F278B2ADB00958743 /* CountryListCellViewModel.swift */,
-			);
-			path = "Cell View Models";
-			sourceTree = "<group>";
-		};
 		1B871291278B3EDF00958743 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1B1DD1772789C1D000434408 /* Main.storyboard */,
-				1B871293278B3F2000958743 /* LoadingCollectionViewCell.xib */,
-				1B871292278B3F2000958743 /* LoadingCollectionViewCell.swift */,
+				1B8712AA278B7AC500958743 /* View Classes */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1B871297278B5D8900958743 /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B871298278B5DAC00958743 /* CountryDetailsViewController.swift */,
+			);
+			path = "View Classes";
+			sourceTree = "<group>";
+		};
+		1B87129A278B5DC300958743 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B87129B278B60E700958743 /* CountryDetailsViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1B87129F278B723E00958743 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B87129D278B716700958743 /* SVGImageProcessor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B8712A0278B7A1B00958743 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B8712A4278B7A4D00958743 /* Storyboard+Xibs */,
+				1B8712A3278B7A4100958743 /* View Classes */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B8712A1278B7A2000958743 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B8712A2278B7A2500958743 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B8712A7278B7A8300958743 /* SavedCountriesListViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1B8712A3278B7A4100958743 /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B8712A5278B7A7400958743 /* SavedCountriesListViewController.swift */,
+			);
+			path = "View Classes";
+			sourceTree = "<group>";
+		};
+		1B8712A4278B7A4D00958743 /* Storyboard+Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5623A2789F099003AB0FC /* SavedCountriesList.storyboard */,
+			);
+			path = "Storyboard+Xibs";
+			sourceTree = "<group>";
+		};
+		1B8712A9278B7ABB00958743 /* Storyboard+Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				1B1DD1772789C1D000434408 /* Main.storyboard */,
+				1B87126F278A08F200958743 /* CountryListCell.xib */,
+				1B871293278B3F2000958743 /* LoadingCollectionViewCell.xib */,
+			);
+			path = "Storyboard+Xibs";
+			sourceTree = "<group>";
+		};
+		1B8712AA278B7AC500958743 /* View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B8712A9278B7ABB00958743 /* Storyboard+Xibs */,
+				1B8712AB278B7ACE00958743 /* Cell Classes */,
+			);
+			path = "View Classes";
+			sourceTree = "<group>";
+		};
+		1B8712AB278B7ACE00958743 /* Cell Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B87126E278A08F200958743 /* CountryListCell.swift */,
+				1B871292278B3F2000958743 /* LoadingCollectionViewCell.swift */,
+			);
+			path = "Cell Classes";
 			sourceTree = "<group>";
 		};
 		1BA562352789EE29003AB0FC /* Storyboard+Xibs */ = {
@@ -366,7 +448,9 @@
 		1BA562392789F08B003AB0FC /* Saved Countries List */ = {
 			isa = PBXGroup;
 			children = (
-				1BA5623A2789F099003AB0FC /* SavedCountriesList.storyboard */,
+				1B8712A1278B7A2000958743 /* Model */,
+				1B8712A0278B7A1B00958743 /* View */,
+				1B8712A2278B7A2500958743 /* View Model */,
 			);
 			path = "Saved Countries List";
 			sourceTree = "<group>";
@@ -675,18 +759,22 @@
 				1B871273278A090700958743 /* CountryListViewController.swift in Sources */,
 				1B87128C278B2A4D00958743 /* CountryListViewModel.swift in Sources */,
 				1B871270278A08F200958743 /* CountryListCell.swift in Sources */,
-				1B871290278B2ADB00958743 /* CountryListCellViewModel.swift in Sources */,
 				1B87127D278B0C9D00958743 /* ResponseHandler.swift in Sources */,
 				1B1DD1A32789C23000434408 /* CountryListModel.swift in Sources */,
+				1B87129C278B60E700958743 /* CountryDetailsViewModel.swift in Sources */,
 				1B871284278B1CA100958743 /* Moya.Response+Extensions.swift in Sources */,
 				1B871281278B185700958743 /* ErrorLogger.swift in Sources */,
+				1B871299278B5DAC00958743 /* CountryDetailsViewController.swift in Sources */,
 				1B871294278B3F2000958743 /* LoadingCollectionViewCell.swift in Sources */,
 				1B871278278AFFD500958743 /* GeoDbApi.swift in Sources */,
 				1B871275278AFD1300958743 /* Constants.swift in Sources */,
+				1B87129E278B716700958743 /* SVGImageProcessor.swift in Sources */,
+				1B8712A8278B7A8300958743 /* SavedCountriesListViewModel.swift in Sources */,
 				1B871286278B1D2600958743 /* MoyaError+Extensions.swift in Sources */,
 				1B1DD1742789C1D000434408 /* SceneDelegate.swift in Sources */,
 				1B871288278B205A00958743 /* NetworkManager.swift in Sources */,
 				1B1DD1A52789C29D00434408 /* CountryDetailsModel.swift in Sources */,
+				1B8712A6278B7A7400958743 /* SavedCountriesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

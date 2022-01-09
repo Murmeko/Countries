@@ -26,4 +26,19 @@ class NetworkManager {
 			}
 		}
 	}
+
+	func fetchCountryDetails(countryCode: String, completion: @escaping (CountryDetailsModel?) -> Void) {
+		provider.request(.init(apiMethods: .countryDetails(countryCode: countryCode))) { moyaResult in
+			let reponseMapper = ResponseMapper.initialize()
+			reponseMapper.map(moyaResult, of: CountryDetailsModel.self) { result in
+				switch result {
+				case .success(let countryListModel):
+					completion(countryListModel)
+				case .failure(let countryListError):
+					debugPrint("Request failed because: \(countryListError)")
+					completion(nil)
+				}
+			}
+		}
+	}
 }

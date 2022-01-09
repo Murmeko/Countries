@@ -6,6 +6,8 @@ target 'Countries' do
 	pod 'Moya', '~> 15.0'
 	pod 'Kingfisher', '~> 7.1'
 
+	pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '3.x'
+
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Crashlytics'
 	pod 'Firebase/Performance'

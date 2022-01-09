@@ -8,4 +8,5 @@
 import Foundation
 
 struct Constants {
+	static let countryListToCountryDetailsSegue = "CountryListToCountryDetailsSegue"
 }

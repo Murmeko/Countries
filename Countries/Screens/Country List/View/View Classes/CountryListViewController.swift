@@ -62,7 +62,8 @@ class CountryListViewController: UICollectionViewController {
 	// MARK: - Navigation
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+		let destinationViewController = segue.destination as? CountryDetailsViewController
+		destinationViewController?.countryDetailsViewModel = CountryDetailsViewModel(with: selectedCountry.code)
 	}
 
 	// MARK: UICollectionViewDataSource
@@ -83,7 +84,7 @@ class CountryListViewController: UICollectionViewController {
 		} else {
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReuseableCountryListCell", for: indexPath) as? CountryListCell
 			let country = countryListViewModel.getCountry(for: indexPath)
-			cell?.countryListCellLabel.text = country.name
+			cell?.configureCell(country: country, indexPath: indexPath)
 			return cell!
 		}
 	}
@@ -100,7 +101,7 @@ class CountryListViewController: UICollectionViewController {
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		if indexPath.row != countryListViewModel.getCountryCount() {
 			self.selectedCountry = countryListViewModel.getCountry(for: indexPath)
-			debugPrint("Ubele")
+			performSegue(withIdentifier: Constants.countryListToCountryDetailsSegue, sender: UIButton.self)
 		}
 	}
 }

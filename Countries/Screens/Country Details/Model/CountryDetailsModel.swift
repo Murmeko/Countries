@@ -8,12 +8,12 @@
 import Foundation
 
 // MARK: - CountryDeatilsModel
-struct CountryDeatilsModel: Codable {
-	let data: DataClass
+struct CountryDetailsModel: Codable {
+	let data: CountryDetailsData
 }
 
 // MARK: - DataClass
-struct DataClass: Codable {
+struct CountryDetailsData: Codable {
 	let capital, code, callingCode: String
 	let currencyCodes: [String]
 	let flagImageURI: String
@@ -26,5 +26,11 @@ struct DataClass: Codable {
 		case flagImageURI = "flagImageUri"
 		case name, numRegions
 		case wikiDataID = "wikiDataId"
+	}
+}
+
+extension CountryDetailsData {
+	static var placeholder = {
+		return CountryDetailsData(capital: "", code: "", callingCode: "", currencyCodes: [""], flagImageURI: "", name: "", numRegions: 0, wikiDataID: "")
 	}
 }
