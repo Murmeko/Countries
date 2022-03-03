@@ -30,12 +30,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urf-Qx-CMf">
-                                <rect key="frame" x="10" y="404.5" width="150" height="35"/>
+                                <rect key="frame" x="10" y="459" width="119" height="19"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="4rr-yW-N0e"/>
-                                    <constraint firstAttribute="height" constant="35" id="XCM-a1-2Qf"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -46,26 +42,46 @@
                                     <action selector="countryDetailsButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e9x-WS-jyk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlb-T9-shb">
+                                <rect key="frame" x="10" y="402" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Locale Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-m0-2oI">
+                                <rect key="frame" x="10" y="431" width="394" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="urf-Qx-CMf" firstAttribute="top" secondItem="VoQ-PF-dQd" secondAttribute="bottom" constant="10" id="675-Ok-sxQ"/>
+                            <constraint firstItem="S8o-m0-2oI" firstAttribute="top" secondItem="jlb-T9-shb" secondAttribute="bottom" constant="8.5" id="4iL-og-F0Q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="urf-Qx-CMf" secondAttribute="bottom" constant="335" id="71N-t7-rtU"/>
                             <constraint firstItem="1r1-HU-9Em" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9OJ-W2-WAi"/>
+                            <constraint firstItem="S8o-m0-2oI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="GWp-4h-eza"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VoQ-PF-dQd" secondAttribute="trailing" constant="10" id="HTQ-FO-iqV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="urf-Qx-CMf" secondAttribute="trailing" constant="10" id="Klp-Jv-5sf"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="urf-Qx-CMf" secondAttribute="bottom" constant="10" id="PNx-cp-9ks"/>
-                            <constraint firstItem="urf-Qx-CMf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="SrY-y1-CUF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jlb-T9-shb" secondAttribute="trailing" constant="10" id="Kxl-rM-9hs"/>
+                            <constraint firstItem="jlb-T9-shb" firstAttribute="top" secondItem="VoQ-PF-dQd" secondAttribute="bottom" constant="7.5" id="Ox7-o5-l38"/>
+                            <constraint firstItem="jlb-T9-shb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="ZKG-FF-qDO"/>
+                            <constraint firstItem="urf-Qx-CMf" firstAttribute="top" secondItem="S8o-m0-2oI" secondAttribute="bottom" constant="10" id="bGu-oE-fKD"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1r1-HU-9Em" secondAttribute="trailing" id="d4z-MZ-eOf"/>
                             <constraint firstItem="VoQ-PF-dQd" firstAttribute="top" secondItem="1r1-HU-9Em" secondAttribute="bottom" constant="10" id="hCM-Tz-Xmz"/>
                             <constraint firstItem="1r1-HU-9Em" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hGc-uw-iZB"/>
                             <constraint firstItem="VoQ-PF-dQd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="kUo-AU-4oR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S8o-m0-2oI" secondAttribute="trailing" constant="10" id="liE-q2-4sp"/>
+                            <constraint firstItem="urf-Qx-CMf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="nIC-Dr-8j1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="urf-Qx-CMf" secondAttribute="trailing" constant="285" id="ypq-mE-CLC"/>
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="countryDetailsCapitalLabel" destination="jlb-T9-shb" id="Ilu-OU-oKR"/>
                         <outlet property="countryDetailsImageView" destination="1r1-HU-9Em" id="tTp-ae-ah1"/>
                         <outlet property="countryDetailsLabel" destination="VoQ-PF-dQd" id="pAv-K5-EvP"/>
+                        <outlet property="countryDetailsLocaleLabel" destination="S8o-m0-2oI" id="O2g-yy-i3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

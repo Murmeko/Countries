@@ -10,6 +10,9 @@ import Kingfisher
 class CountryDetailsViewController: UIViewController {
 	@IBOutlet weak var countryDetailsImageView: UIImageView!
 	@IBOutlet weak var countryDetailsLabel: UILabel!
+	@IBOutlet weak var countryDetailsCapitalLabel: UILabel!
+	@IBOutlet weak var countryDetailsLocaleLabel: UILabel!
+	
 	private var country = CountryDetailsData.placeholder()
 
 	var countryDetailsViewModel: CountryDetailsViewModel?
@@ -21,6 +24,7 @@ class CountryDetailsViewController: UIViewController {
 			let countryImageResource = ImageResource(downloadURL: URL(string: self.country.flagImageURI)!)
 			self.countryDetailsImageView.kf.setImage(with: countryImageResource, options: [.processor(SVGImageProcessor())])
 			self.countryDetailsLabel.text = "Country Code: \(self.country.code)"
+			self.countryDetailsCapitalLabel.text = "Capital: \()"
 			self.navigationItem.title = self.country.name
 		}
 	}
